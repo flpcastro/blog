@@ -1,0 +1,75 @@
+baseURL = 'https://example.org/'
+languageCode = 'pt-br'
+defaultContentLanguage = "en"
+title = 'Felipe Castro'
+theme = 'fluency'
+author = 'Felipe Castro'
+enableRobotsTXT = true
+summaryLength = 100
+pygmentsUseClasses = true
+pygmentsCodefences = true
+hasCJKLanguage = false
+enableEmoji = true
+
+[languages]
+  [languages.pt]
+    languageName = "Português"
+    weight = 1
+    title = "Felipe Castro"
+    [languages.pt.params]
+      description = "Escrevendo sobre Go, JavaScript e tecnologia."
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "Felipe Castro"
+    [languages.en.params]
+      description = "Writing about Go, JavaScript and technology."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author = "Felipe"
+  description = "Escrevendo sobre Go, JavaScript e tecnologia."
+  mainSections = ["posts"]
+  disableSocialShare = true
+  disableIndexSummary = false
+  disableAnchorHeading = false
+  disableBreadcrumb = false
+  disableComment = true
+  mathRender = false
+  enableFullContentRSS = true
+
+[[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  url = "posts/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  url = "about/"
+  weight = 2
+
+[[menu.footer]]
+  identifier = "github"
+  url = "https://github.com/flpcastro"
+  name = "GitHub"
+
+[[menu.footer]]
+  identifier = "email"
+  url = "mailto:flpc.dev@gmail.com"
+  name = "Email"
+
+[[menu.footer]]
+  identifier = "linkedin"
+  url = "https://linkedin.com/in/felipe-de-castro-curto"
+  name = "LinkedIn"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
