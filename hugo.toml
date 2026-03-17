@@ -16,8 +16,6 @@ enableEmoji = true
     languageName = "Português"
     weight = 1
     title = "Felipe Castro"
-    [languages.pt.params]
-      description = "Escrevendo sobre Go, JavaScript e tecnologia."
 
   [languages.en]
     languageName = "English"
