@@ -1,6 +1,7 @@
 baseURL = 'https://flpcastro.dev'
-languageCode = 'pt-br'
+languageCode = 'en'
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 title = 'Felipe Castro'
 theme = 'PaperMod'
 author = 'Felipe Castro'
@@ -12,17 +13,21 @@ hasCJKLanguage = false
 enableEmoji = true
 
 [languages]
-  [languages.pt]
-    languageName = "Português"
-    weight = 1
-    title = "Felipe Castro"
-
   [languages.en]
+    languageCode = "en"
     languageName = "English"
-    weight = 2
+    weight = 1
     title = "Felipe Castro"
     [languages.en.params]
       description = "Writing about Go, JavaScript and technology."
+
+  [languages.pt]
+    languageCode = "pt-br"
+    languageName = "Português"
+    weight = 2
+    title = "Felipe Castro"
+    [languages.pt.params]
+      description = "Escrevendo sobre Go, JavaScript e tecnologia."
 
 [markup]
   [markup.goldmark]
@@ -31,7 +36,7 @@ enableEmoji = true
 
 [params]
   author = "Felipe"
-  description = "Escrevendo sobre Go, JavaScript e tecnologia."
+  description = "Writing about Go, JavaScript and technology."
   mainSections = ["posts"]
   disableSocialShare = true
   disableIndexSummary = false
